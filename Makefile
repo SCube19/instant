@@ -12,4 +12,4 @@ bnfc: src/Makefile
 	cd src && make
 
 clean:
-	rm src/*.o src/*.hi && cd src && make clean
+	rm insc_llvm insc_jvm src/*.o src/*.hi && cd src && make clean
