@@ -11,7 +11,7 @@ all : Instant/Test
 # Rules for building the parser.
 
 Instant/ErrM.hs Instant/Lex.x Instant/Print.hs Instant/Par.y Instant/Test.hs : Instant.cf
-	bnfc --haskell -d Instant.cf
+	../lib/bnfc --haskell -d Instant.cf
 
 %.hs : %.y
 	happy --ghc --coerce --array --info $<

@@ -23,12 +23,14 @@ Example
     - *.class - jvm bytecode
 
 # Additional libraries #
-- lib/jasmin.jar - used to create .class files
-
+- lib
+    - jasmin.jar - used to create .class files
+    - bnfc - used to generate abstract syntax tree
 # Directory Structure #
 ```
 ├── lib
 |   ├── jasmin.jar          # Binary used to create .class files from .j files
+|   ├── bnfc                # Bnfc binary 
 ├── src
 |   ├── Instant             # Directory with files created by bnfc
 |   |   ├── ... 
